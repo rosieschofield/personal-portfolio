@@ -1,3 +1,104 @@
-html {
-    background: #f8f8f8;
+body {
+    background: rgba(34, 33, 33, 0.92);
+    display: grid;
+    grid-template-areas:
+        "welcome"
+        "projects"
+        "connect";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+}
+
+.welcome-page {
+    grid-area: welcome;
+}
+
+.project-sect {
+    background: #9bc6cf;
+    grid-area: projects;
+    grid-template-areas:
+        "title title title"
+        "proj1 proj2 proj3";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-page {
+    grid-area: connect;
+}
+
+.name {
+    color: #fae09e;
+    font-family: Marck Script, Josefin Sans, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.portfolio {
+    color: #9bc6cf;
+    font-family: Dokdo, Josefin Sans, sans-serif;
+    font-size: 100px;
+}
+
+.title {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+}
+
+.welcome {
+    color: #da6a6a;
+    font-family: Sansita One, Josefin Sans, sans-serif;
+    font-size: 80px;
+}
+
+.to {
+    color: #fae09e;
+    font-family: Sansita One, Josefin Sans, sans-serif;
+    font-size: 80px;
+}
+
+.my {
+    color: #4c8d9b;
+    font-family: Sansita One, Josefin Sans, sans-serif;
+    font-size: 80px;
+}
+
+.sub-header {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Sansita One, Josefin Sans, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.proj1 {
+    grid-area: proj1;
+}
+
+.proj2 {
+    grid-area: proj2;
+}
+
+.proj3 {
+    grid-area: proj3;
+}
+
+.proj-header {
+    color: rgba(34, 33, 33, 0.92);
+    font-family: Dokdo, Josefin Sans, sans-serif;
+    font-size: 60px;
+    grid-area: title;
+}
+
+.connect-header {
+    color: #da6a6a;
+    font-family: Dokdo, Josefin Sans, sans-serif;
+    font-size: 80px;
 }
